@@ -1,1 +1,31 @@
-<h1>hello</h1>
+<!doctype html>
+<html>
+<head>
+	<title>Brulee Workbook Redirect</title>
+</head>
+<body>
+	<p id="message">Redirecting to workbook...</p>
+	<script>
+		urlForKey = {
+"apple": "https://docs.google.com/spreadsheets/d/1OAZOd6t9J_KBSQfqvIIXqwrs-hAZaSwcLRhVwoo-A80/edit#gid=0&range=2:2",
+"banana": "https://docs.google.com/spreadsheets/d/1OAZOd6t9J_KBSQfqvIIXqwrs-hAZaSwcLRhVwoo-A80/edit#gid=0&range=3:3",
+"carrot": "https://docs.google.com/spreadsheets/d/1OAZOd6t9J_KBSQfqvIIXqwrs-hAZaSwcLRhVwoo-A80/edit#gid=0&range=4:4",
+"dog": "https://docs.google.com/spreadsheets/d/1OAZOd6t9J_KBSQfqvIIXqwrs-hAZaSwcLRhVwoo-A80/edit#gid=0&range=5:5",
+"elephant": "https://docs.google.com/spreadsheets/d/1OAZOd6t9J_KBSQfqvIIXqwrs-hAZaSwcLRhVwoo-A80/edit#gid=0&range=6:6",
+"fort": "https://docs.google.com/spreadsheets/d/1OAZOd6t9J_KBSQfqvIIXqwrs-hAZaSwcLRhVwoo-A80/edit#gid=0&range=7:7",
+"garage": "https://docs.google.com/spreadsheets/d/1OAZOd6t9J_KBSQfqvIIXqwrs-hAZaSwcLRhVwoo-A80/edit#gid=0&range=8:8",
+"hugs": "https://docs.google.com/spreadsheets/d/1OAZOd6t9J_KBSQfqvIIXqwrs-hAZaSwcLRhVwoo-A80/edit#gid=0&range=9:9",
+"igloo": "https://docs.google.com/spreadsheets/d/1OAZOd6t9J_KBSQfqvIIXqwrs-hAZaSwcLRhVwoo-A80/edit#gid=0&range=10:10",
+"juice": "https://docs.google.com/spreadsheets/d/1OAZOd6t9J_KBSQfqvIIXqwrs-hAZaSwcLRhVwoo-A80/edit#gid=0&range=11:11"
+		};
+
+		key = window.location.href.split('#')[1];
+		if (urlForKey[key] !== undefined) {
+			window.location.replace(urlForKey[key]);
+		}
+		else {
+			document.getElementById('message').innerText = 'key not found';
+		}
+	</script>
+</body>
+</html>
