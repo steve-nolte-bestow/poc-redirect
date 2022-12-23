@@ -16,10 +16,12 @@
 "garage": "https://docs.google.com/spreadsheets/d/1OAZOd6t9J_KBSQfqvIIXqwrs-hAZaSwcLRhVwoo-A80/edit#gid=0&range=8:8",
 "hugs": "https://docs.google.com/spreadsheets/d/1OAZOd6t9J_KBSQfqvIIXqwrs-hAZaSwcLRhVwoo-A80/edit#gid=0&range=9:9",
 "igloo": "https://docs.google.com/spreadsheets/d/1OAZOd6t9J_KBSQfqvIIXqwrs-hAZaSwcLRhVwoo-A80/edit#gid=0&range=10:10",
-"juice": "https://docs.google.com/spreadsheets/d/1OAZOd6t9J_KBSQfqvIIXqwrs-hAZaSwcLRhVwoo-A80/edit#gid=0&range=11:11"
+"juice": "https://docs.google.com/spreadsheets/d/1OAZOd6t9J_KBSQfqvIIXqwrs-hAZaSwcLRhVwoo-A80/edit#gid=0&range=11:11",
+"☃️": "https://docs.google.com/spreadsheets/d/1OAZOd6t9J_KBSQfqvIIXqwrs-hAZaSwcLRhVwoo-A80/edit#gid=0&range=12:12",
+"so he said, \"foo bar\"": "https://docs.google.com/spreadsheets/d/1OAZOd6t9J_KBSQfqvIIXqwrs-hAZaSwcLRhVwoo-A80/edit#gid=0&range=13:13",
 		};
 
-		key = window.location.href.split('#')[1];
+		key = unescape(window.location.href.split('#')[1]);
 		if (urlForKey[key] !== undefined) {
 			window.location.replace(urlForKey[key]);
 		}
